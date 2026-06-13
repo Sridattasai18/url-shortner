@@ -1,0 +1,1 @@
+web: cd url-shortner-server && gunicorn wsgi:app

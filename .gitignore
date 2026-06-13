@@ -1,0 +1,49 @@
+# ========================
+# SENSITIVE / SECRET FILES
+# ========================
+.env
+.env.local
+.env.production
+.env.development
+.env.*
+ServiceAccountKey.json
+*.json.key
+firebase-adminsdk*.json
+
+# ========================
+# PYTHON / FLASK (Server)
+# ========================
+url-shortner-server/venv/
+url-shortner-server/__pycache__/
+url-shortner-server/**/__pycache__/
+url-shortner-server/*.pyc
+url-shortner-server/*.pyo
+url-shortner-server/*.egg-info/
+url-shortner-server/instance/
+url-shortner-server/.pytest_cache/
+
+# ========================
+# NODE / REACT (Client)
+# ========================
+url-shortner-client/node_modules/
+url-shortner-client/build/
+url-shortner-client/coverage/
+url-shortner-client/npm-debug.log*
+url-shortner-client/yarn-debug.log*
+url-shortner-client/yarn-error.log*
+
+# ========================
+# REACT BUILD IN SERVER
+# (generated — not source)
+# ========================
+url-shortner-server/app/build/
+
+# ========================
+# OS / EDITOR JUNK
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.sw?

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: url-shortener
+    runtime: python
+    rootDir: url-shortner-server
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app
+    envVars:
+      - key: DATABASE_URL
+        sync: false          # You set this manually in Render dashboard
+      - key: FIREBASE_CREDENTIALS
+        sync: false          # Paste your ServiceAccountKey.json contents here
+    plan: free
